@@ -13,14 +13,12 @@ const useFetch = (apiPath, queryTerm="") => {
 				fetch_url
 			);
 			const json = await response.json();
-			console.log('json', json);
 			const mappedData = json.map((movie) => ({
 				id: movie.id,
 				title: movie.titulo,
 				overview: movie.descripcion,
 				poster_path: movie.imagen_url
 			}));
-			console.log('mappedData', mappedData);
 			setData(mappedData);
 			setLoader(false);
 		};

@@ -16,8 +16,13 @@ export const Nav = [
     },
     {
         id: 4,
-        title: "Upcoming",
-        link: "/movies/upcoming"
+        title: "Añadir nueva",
+        link: "/movies/nuevo"
     }
+    // {
+    //     id: 4,
+    //     title: "Upcoming",
+    //     link: "/movies/upcoming"
+    // }
 
 ]
